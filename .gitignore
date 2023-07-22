@@ -1,6 +1,7 @@
 # Compiled outputs
 node_modules
 build
+coverage
 
 # Logs
 logs
