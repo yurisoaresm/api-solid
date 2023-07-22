@@ -7,8 +7,8 @@ import { AlreadyExistsError } from './errors/already-exists.error';
 import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory.users.repository';
 
 describe('Create User', () => {
-  let usersRepository = new InMemoryUsersRepository();
-  let createUser = new CreateUser(usersRepository);
+  let usersRepository: InMemoryUsersRepository;
+  let createUser: CreateUser;
 
   beforeEach(() => {
     usersRepository = new InMemoryUsersRepository();

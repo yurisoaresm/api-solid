@@ -6,7 +6,7 @@ O que o usuário vai fazer na aplicação (usuário poderá logar, usuário pode
 Não pensar em como o usuário vai fazer, mas sim o que ele vai fazer (tecnicamente).
 
 - [x] Deve ser possível cadastrar um usuário;
-- [ ] Deve ser possível autenticar um usuário;
+- [x] Deve ser possível autenticar um usuário;
 - [ ] Deve ser possível obter o perfil de um usuário logado;
 - [ ] Deve ser possível obter o número de checkIns realizados por um usuário logado;
 - [ ] Deve ser possível o usuário obter o seu histórico de checkIns;
@@ -33,4 +33,4 @@ Não dependem do usuário.
 - [x] A senha do usuário deve estar criptografada;
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [ ] Todas as listas de dados precisam estar paginadas em 20 itens por página;
-- [ ] O usuário deve ser identificado por um JWT (JSON Web Token);
+- [ ] O usuário deve ser identificado em toda a aplicação por um JWT (JSON Web Token);
