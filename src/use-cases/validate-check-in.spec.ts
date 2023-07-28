@@ -2,7 +2,7 @@ import { describe, it, beforeEach, afterEach, expect, vi } from 'vitest';
 
 import { LateCheckInValidationError } from './errors/late-check-in-validation-error';
 import { ResourceNotFoundError } from './errors/resource-not-found.error';
-import { ValidateCheckIn } from './validate-check-ins';
+import { ValidateCheckIn } from './validate-check-in';
 
 import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory.check-ins.repository';
 
