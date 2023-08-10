@@ -9,7 +9,9 @@
     "build": "tsup src --out-dir build",
     "docker:up": "docker compose up -d",
     "docker:stop": "docker compose stop",
-    "test": "vitest run",
+    "test": "vitest run --dir src/use-cases",
+    "pretest:e2e": "npm link ./prisma/vitest-environment-prisma && npm link vitest-environment-prisma",
+    "test:e2e": "vitest run --dir src/http",
     "test:coverage": "vitest run --coverage"
   },
   "keywords": [],

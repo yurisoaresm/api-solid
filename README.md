@@ -34,3 +34,7 @@ Não dependem do usuário.
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [x] Todas as listas de dados precisam estar paginadas em 20 itens por página;
 - [ ] O usuário deve ser identificado em toda a aplicação por um JWT (JSON Web Token);
+
+## Observações
+
+A pasta vitest-environment-prisma contém uma suite para executar os testes e2e isoladamente, isto é, sem interferir entre si e no banco de dados de desenvolvimento. Note que nela nós criamos um schema diferente para cada um dos testes, e criamos as tabelas com o comando `npx prisma deploy` (e não com o comando `npx prisma migrate dev`, porque não queremos comparar as migrations anteriores). A função setup() é executada antes dos testes, enquanto teardown(), depois.
