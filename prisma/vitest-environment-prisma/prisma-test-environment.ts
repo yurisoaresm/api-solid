@@ -5,9 +5,7 @@ import { execSync } from 'child_process';
 import { randomUUID } from 'node:crypto';
 import { Environment } from 'vitest';
 
-import { prisma } from '@/lib/prisma';
-
-const primsa = new PrismaClient();
+const prisma = new PrismaClient();
 
 function generateDatabaseUrl(schema: string) {
   if (!process.env.DATABASE_URL) {
@@ -38,6 +36,7 @@ export default {
         await prisma.$executeRawUnsafe(
           `DROP SCHEMA IF EXISTS "${schema}" CASCADE;`,
         );
+
         await prisma.$disconnect();
       },
     };
