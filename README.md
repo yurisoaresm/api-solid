@@ -23,8 +23,8 @@ Condicionais para o funcionamento da aplicação; quando o usuário faz isso, ac
 - [x] Não deve ser possível fazer 2 checkIns no mesmo dia;
 - [x] Não deve ser possível fazer checkIn se não estiver perto (100m) da academia;
 - [x] O checkIn só pode ser validado em até 20 minutos após ser criado;
-- [ ] O checkIn só pode ser validado por um administrador;
-- [ ] A academia só pode ser cadastrada por um administrador;
+- [x] O checkIn só pode ser validado por um administrador;
+- [x] A academia só pode ser cadastrada por um administrador;
 
 ## Requisitos Não Funcionais
 O que a aplicação precisa ter para funcionar (banco de dados, linguagem de programação, etc);
@@ -33,7 +33,7 @@ Não dependem do usuário.
 - [x] A senha do usuário deve estar criptografada;
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL;
 - [x] Todas as listas de dados precisam estar paginadas em 20 itens por página;
-- [ ] O usuário deve ser identificado em toda a aplicação por um JWT (JSON Web Token);
+- [x] O usuário deve ser identificado em toda a aplicação por um JWT (JSON Web Token);
 
 ## Observações
 
